@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "569816836140",
+    "project_id": "flutter-project-e385b",
+    "storage_bucket": "flutter-project-e385b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569816836140:android:a6433231ca689c9a1e8989",
+        "android_client_info": {
+          "package_name": "com.example.firabase_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569816836140-jpa0uv5i59pkuc46fgc318d901ccmndi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtF2_tIwwOFTCC_HIBQ1AfKNuIPbCEa94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569816836140-jpa0uv5i59pkuc46fgc318d901ccmndi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "569816836140-m0mmgq4g482rkoc9qnqno18h0di0ed0l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.firabaseApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
