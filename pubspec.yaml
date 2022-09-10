@@ -33,6 +33,11 @@ dependencies:
   firebase_core: ^1.18.0
   cloud_firestore: ^3.1.18
   flutter_mobx: ^2.0.6+1
+  timezone: ^0.8.0
+  flutter_native_timezone: ^2.0.0
+  flutter_local_notifications: ^9.4.0
+  firebase_messaging: ^11.2.13
+  provider:
  
 
 

@@ -1,7 +1,10 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
+import '../../../services/firebase_mensagem_service.dart';
+import '../../../services/services_notifications.dart';
 import '../../model/user_model.dart';
 import '../controller/user_controller.dart';
 
@@ -16,7 +19,24 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
   @override
   void initState() {
     controller.getListUser();
+    getDeviceFirebaseToken();
+    checkNotifications();
+    initilizeFirebaseMessaging();
+    //Modular.get<NotificationService>().showLocalNotification(CustomNotification(id: 1, title: 'test', body: 'scscs'));
     super.initState();
+  }
+
+  initilizeFirebaseMessaging() async {
+    await Modular.get<FirebaseMessagingService>().initialize();
+  }
+
+  checkNotifications() async {
+    await Modular.get<NotificationService>().checkForNotifications();
+  }
+
+  getDeviceFirebaseToken() async {
+    final token = await FirebaseMessaging.instance.getToken();
+    print('TOKEN: $token');
   }
 
   @override
@@ -150,6 +170,3 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
     );
   }
 }
-
-
-
